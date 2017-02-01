@@ -11,13 +11,13 @@ public class Fenetre extends JFrame {
 
 	    this.setTitle("Ma première fenêtre Java");
 
-	    this.setSize(400, 400);
+	    this.setSize(200, 200);
 
 	    this.setLocationRelativeTo(null);               
 
 	    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-	    this.setContentPane(new Cercle());
+	    this.setContentPane(new Croix());
 
 	    this.setVisible(true);
 
@@ -25,7 +25,8 @@ public class Fenetre extends JFrame {
 	  }
 	
 	public static void main(String [] args){
-		Fenetre cercle =new Fenetre();
+		Fenetre croix =new Fenetre();
+		
 		
 		
 		
