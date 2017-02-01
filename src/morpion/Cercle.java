@@ -1,20 +1,16 @@
 package morpion;
 
+import java.awt.BasicStroke;
+import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 import javax.swing.JPanel;
 
 public class Cercle extends JPanel{
-
-	public Cercle() {
-		this.setSize(100, 100);
-	}
-	
-	public void paintComponent(Graphics g){
-		//int x1 = this.getWidth()/4;
-		int x1 = 25;
-		//int y1 = this.getHeight()/4;
-		int y1 = 25;
-		g.drawOval(x1, y1, 50, 50);
+	public void paint(Graphics g){
+		Graphics2D g2 = (Graphics2D) g;
+	    g2.setStroke(new BasicStroke(5));
+		g.drawOval(25, 25, 50, 50);
 	}
 }
